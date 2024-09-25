@@ -5,6 +5,7 @@ import { Geologica, Source_Code_Pro } from "next/font/google";
 
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Providers } from "./providers";
@@ -37,6 +38,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
