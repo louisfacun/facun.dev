@@ -17,7 +17,7 @@ const sourceCodePro = Source_Code_Pro({
 const geologica = Geologica({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Louis Facun | Full-Stack Web Developer",
+  title: "Louis Facun – Full-Stack Web Developer",
   description:
     "I'm a passionate software developer based in Philippines specializing in Next.js, React.js, Tailwind CSS, and Django Rest Framework.",
 };
