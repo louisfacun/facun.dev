@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Providers } from "./providers";
-import {
-  //Inter,
-  //Montserrat,
-  Source_Code_Pro,
-  //IBM_Plex_Mono,
-  Geologica,
-  //Anonymous_Pro,
-  //Azeret_Mono,
-} from "next/font/google";
 import "./globals.css";
 
-import Header from "@/app/components/header";
+import { Geologica, Source_Code_Pro } from "next/font/google";
+
 import Footer from "@/app/components/footer";
+import Header from "@/app/components/header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+import { Providers } from "./providers";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
@@ -42,6 +37,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
