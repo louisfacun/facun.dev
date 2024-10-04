@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Geologica, Source_Code_Pro } from "next/font/google";
+import { Source_Code_Pro, Source_Sans_3 } from "next/font/google";
 
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
@@ -13,14 +13,14 @@ import { Providers } from "./providers";
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
   variable: "--font-source-code-pro",
-  display: "swap",
 });
-const geologica = Geologica({ subsets: ["latin"] });
+
+const sourceSans3 = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Louis Facun – Full-Stack Web Developer",
+  title: "Louis Facun: Full-Stack Web Developer",
   description:
-    "I'm a passionate software developer based in Philippines specializing in Next.js, React.js, Tailwind CSS, and Django Rest Framework.",
+    "Louis Facun is a full-stack web developer from the Philippines, specializing in Next.js, Tailwind CSS, and Django Rest Framework. Discover his innovative web solutions",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`text-gray-900 transition-colors duration-200 dark:bg-gray-900 dark:text-gray-100 ${geologica.className} ${sourceCodePro.variable}`}
+        className={`text-gray-900 transition-colors duration-200 dark:bg-gray-900 dark:text-gray-100 ${sourceSans3.className} ${sourceCodePro.variable}`}
       >
         <Providers>
           <Header />
