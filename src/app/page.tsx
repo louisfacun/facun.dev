@@ -7,19 +7,19 @@ import { ChevronRightIcon } from "@/app/components/icons";
 export default function Home() {
   return (
     <>
-      <section className="max-w-2xl mx-auto px-4 py-8 sm:py-4 flex flex-col sm:flex-row items-center gap-4">
-        <div className="flex flex-col items-center text-center sm:text-left sm:items-start sm:w-2/3">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4">
+      <section className="mx-auto flex max-w-2xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:py-4">
+        <div className="flex flex-col items-center text-center sm:w-2/3 sm:items-start sm:text-left">
+          <h1 className="mb-2 text-2xl font-bold sm:mb-4 sm:text-3xl">
             Hi, I&apos;m Louis!
           </h1>
-          <p className="mb-4 text-gray-500 max-w-sm sm:max-w-md leading-loose">
+          <p className="mb-4 max-w-sm leading-loose text-gray-500 dark:text-gray-400 sm:max-w-md">
             I&apos;m a passionate software developer based in Philippines
             specializing in Next.js, React.js, Tailwind CSS, and Django Rest
             Framework.
           </p>
           <a
             href="about-me"
-            className="flex items-center gap-x-2 text-blue-500"
+            className="flex transform items-center gap-x-2 text-blue-500 transition duration-300 hover:scale-110 hover:text-blue-700"
           >
             Learn more about me <ChevronRightIcon />
           </a>
@@ -33,25 +33,31 @@ export default function Home() {
 
       <section
         id="projects"
-        className="scroll-mt-32 max-w-2xl mx-auto px-4 py-8 sm:py-12"
+        className="mx-auto max-w-2xl scroll-mt-32 px-4 py-8 sm:py-12"
       >
-        <h2 className="text-xl font-bold mb-4 ">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ProjectCard
-            title="PHSaver.com"
-            description="In progress full-stack development for PHSaver.com"
-            slug="phsaver"
-            techList={["Next.js", "Tailwind", "Django", "Django REST"]}
-          />
+        <h2 className="mb-4 text-center text-xl font-bold sm:text-left">
+          Projects
+        </h2>
+        <div className="mx-auto max-w-xs sm:max-w-full">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <ProjectCard
+              imgHref="/phsaver.svg"
+              imgAlt="PHSaver logo"
+              title="PHSaver.com full-stack web development"
+              description="A digital banks in the Philippines directory"
+              slug="phsaver"
+              techList={["Next.js", "Tailwind CSS", "Django", "Django REST"]}
+            />
+          </div>
         </div>
       </section>
 
-      <section id="contact" className="max-w-2xl mx-auto px-4 py-8 sm:py-12">
-        <h2 className="text-xl font-bold mb-4">Contact Me</h2>
+      <section id="contact" className="mx-auto max-w-2xl px-4 py-8 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold">Contact Me</h2>
         <form
           action="#"
           method="POST"
-          className="p-4 sm:p-6 border border-gray-200 dark:border-gray-700 rounded-md"
+          className="rounded-md border border-gray-200 p-4 dark:border-gray-700 sm:p-6"
         >
           <div className="mb-4">
             <label
@@ -64,13 +70,13 @@ export default function Home() {
               type="text"
               id="name"
               name="name"
-              className="w-full p-2 border border-gray-200 dark:border-gray-700 rounded-md"
+              className="w-full rounded-md border border-gray-200 p-2 dark:border-gray-700"
             />
           </div>
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-gray-500  dark:text-gray-400"
+              className="block text-gray-500 dark:text-gray-400"
             >
               Email
             </label>
@@ -78,25 +84,25 @@ export default function Home() {
               type="email"
               id="email"
               name="email"
-              className="w-full p-2 border border-gray-200 dark:border-gray-700 rounded-md"
+              className="w-full rounded-md border border-gray-200 p-2 dark:border-gray-700"
             />
           </div>
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="block text-gray-500  dark:text-gray-400"
+              className="block text-gray-500 dark:text-gray-400"
             >
               Message
             </label>
             <textarea
               id="message"
               name="message"
-              className="w-full p-2 border border-gray-200 dark:border-gray-700 rounded-md"
+              className="w-full rounded-md border border-gray-200 p-2 dark:border-gray-700"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center"
+            className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
           >
             Send
           </button>
