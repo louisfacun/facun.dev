@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <>
       {/* Mobile nav */}
-      <div className="sticky top-12 flex gap-x-4 gap-y-4 overflow-x-auto whitespace-nowrap border-b border-gray-200 bg-white text-sm font-semibold dark:bg-gray-900 dark:text-white sm:hidden sm:flex-col sm:text-lg">
+      <div className="no-scrollbar sticky top-12 flex gap-x-4 gap-y-4 overflow-x-auto whitespace-nowrap border-b border-gray-200 text-sm font-semibold dark:text-white sm:hidden sm:flex-col sm:text-lg">
         {/* TODO: update active tab on scroll */}
         {/* Mobile-first screen navigation tab */}
         <NavLink id="story" text="Story" isActive={activeTab === "story"} />
@@ -61,7 +61,7 @@ export default function Page() {
         <div className="flex w-full flex-col gap-4 sm:flex-row sm:gap-8">
           {/* TODO: update active tab on scroll */}
           {/* Medium screen navigation tab */}
-          <div className="hidden bg-white dark:bg-gray-900 dark:text-white sm:block sm:w-1/4">
+          <div className="hidden dark:text-white sm:block sm:w-1/4">
             <div className="sticky top-28 flex flex-col gap-x-4 gap-y-4 overflow-x-auto whitespace-nowrap text-lg font-semibold">
               <a href="#story">Story</a>
               <a href="#skills">Skills</a>
