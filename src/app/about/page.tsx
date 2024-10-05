@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <>
       {/* Mobile nav */}
-      <div className="no-scrollbar sticky top-12 flex gap-x-4 gap-y-4 overflow-x-auto whitespace-nowrap border-b border-gray-200 text-sm font-semibold dark:text-white sm:hidden sm:flex-col sm:text-lg">
+      <div className="no-scrollbar sticky top-12 flex gap-x-2 gap-y-4 overflow-x-auto whitespace-nowrap border-b border-gray-200 bg-white text-sm font-semibold dark:border-gray-700 dark:bg-gray-900 dark:text-white sm:hidden sm:flex-col sm:text-lg">
         {/* TODO: update active tab on scroll */}
         {/* Mobile-first screen navigation tab */}
         <NavLink id="story" text="Story" isActive={activeTab === "story"} />
@@ -56,13 +56,13 @@ export default function Page() {
           isActive={activeTab === "contact"}
         />
       </div>
-
-      <div className="mx-auto max-w-2xl px-4 py-6 sm:py-16">
+      {/* sm:py-16 */}
+      <div className="mx-auto max-w-2xl px-4 sm:py-16">
         <div className="flex w-full flex-col gap-4 sm:flex-row sm:gap-8">
           {/* TODO: update active tab on scroll */}
           {/* Medium screen navigation tab */}
           <div className="hidden dark:text-white sm:block sm:w-1/4">
-            <div className="sticky top-28 flex flex-col gap-x-4 gap-y-4 overflow-x-auto whitespace-nowrap text-lg font-semibold">
+            <div className="fixed flex flex-col gap-x-4 gap-y-4 overflow-x-auto whitespace-nowrap text-lg font-semibold">
               <a href="#story">Story</a>
               <a href="#skills">Skills</a>
               <a href="#experience">Experience</a>

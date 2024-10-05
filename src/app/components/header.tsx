@@ -11,13 +11,22 @@ const Header = () => {
         </a>
 
         <div className="flex items-center">
-          <a href="/about-me" className="mx-2 hover:text-blue-500">
+          <a
+            href="/about"
+            className="mx-2 transition duration-300 hover:-rotate-6 hover:text-blue-500"
+          >
             About Me
           </a>
-          <a href="#projects" className="mx-2 hover:text-blue-500">
+          <a
+            href="#projects"
+            className="mx-2 transition duration-300 hover:-rotate-6 hover:text-blue-500"
+          >
             Projects
           </a>
-          <a href="#contact" className="mx-2 hover:text-blue-500">
+          <a
+            href="#contact"
+            className="mx-2 transition duration-300 hover:-rotate-6 hover:text-blue-500"
+          >
             Contact
           </a>
           <ThemeSwitcher />

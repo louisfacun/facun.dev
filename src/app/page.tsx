@@ -18,7 +18,7 @@ export default function Home() {
             Framework.
           </p>
           <a
-            href="about-me"
+            href="/about"
             className="flex transform items-center gap-x-2 text-blue-500 transition duration-300 hover:scale-110 hover:text-blue-700"
           >
             Learn more about me <ChevronRightIcon />

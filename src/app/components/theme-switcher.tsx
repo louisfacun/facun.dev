@@ -22,7 +22,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="rounded-full p-2 hover:bg-gray-200 hover:dark:bg-gray-700"
+      className="rounded-full p-2 transition-transform duration-300 hover:rotate-45 hover:bg-gray-200 hover:dark:bg-gray-700"
     >
       {resolvedTheme === "dark" ? <MoonIcon /> : <SunIcon />}
     </button>
