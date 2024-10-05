@@ -3,6 +3,7 @@
 import { ReactNode, useEffect, useState } from "react";
 
 import NavLink from "@/app/components/nav-link";
+import { GitHubIcon, LinkedInIcon, XTwitterIcon } from "@iconstack/react";
 
 // TODO: micro features
 // add philippine flag
@@ -206,13 +207,27 @@ export default function Page() {
 
             <Section id="links" heading="My Links">
               <div className="flex flex-col">
-                <a href="https://github.com/louisfacun" target="lf_gh">
-                  GitHub
+                <a
+                  href="https://github.com/louisfacun"
+                  className="flex items-center gap-x-2"
+                  target="lf_gh"
+                >
+                  <GitHubIcon className="h-4 w-4" /> GitHub
                 </a>
-                <a href="https://x.com/louisfacun" target="lf_x">
+                <a
+                  href="https://x.com/louisfacun"
+                  className="flex items-center gap-x-2"
+                  target="lf_x"
+                >
+                  <XTwitterIcon className="h-4 w-4" />
                   X/Twitter
                 </a>
-                <a href="https://linkedin.com/in/louisfacun" target="lf_li">
+                <a
+                  href="https://linkedin.com/in/louisfacun"
+                  className="flex items-center gap-x-2"
+                  target="lf_li"
+                >
+                  <LinkedInIcon className="h-4 w-4" />
                   LinkedIn
                 </a>
               </div>
