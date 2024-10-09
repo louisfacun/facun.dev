@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <a
       href={`projects/${slug}`}
-      className="rounded-md border border-gray-200 p-4 shadow-gray-200 duration-300 hover:shadow-lg dark:border-gray-700 dark:shadow-gray-700 dark:hover:shadow-gray-900"
+      className="rounded-md border border-gray-200 p-4 shadow-gray-200 duration-300 hover:no-underline hover:shadow-lg dark:border-gray-700 dark:shadow-gray-700 dark:hover:shadow-gray-900"
     >
       <div className="flex flex-col gap-y-4">
         <div className="overflow-hidden rounded-md">
