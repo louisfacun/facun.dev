@@ -5,6 +5,8 @@ import { ReactNode, useEffect, useState } from "react";
 import NavLink from "@/app/components/nav-link";
 import { GitHubIcon, LinkedInIcon, XTwitterIcon } from "@iconstack/react";
 
+import { ExternalLinkIcon } from "../components/icons";
+
 // TODO: micro features
 // add philippine flag
 // add short story toggle
@@ -169,19 +171,19 @@ export default function Page() {
                 <li>PHP</li>
                 <li>MySQL</li>
                 <li>Django</li>
-                <li>Django REST framework</li>
+                <li>Django rest framework</li>
               </ul>
 
               <Heading size="h3" heading="DevOps" />
               <ul className="mb-4 list-disc pl-5">
+                <li>DigitalOcean</li>
                 <li>GitHub Actions</li>
                 <li>AWS</li>
-                <li>DigitalOcean</li>
               </ul>
 
               <Heading size="h3" heading="Tools" />
               <ul className="mb-4 list-disc pl-5">
-                <li>Development: VSCode, Github Copilots</li>
+                <li>Development: VSCode, Github Copilot</li>
                 <li>UI/UX Design: Familiarity with Figma</li>
                 <li>Vector Design: Inkscape</li>
               </ul>
@@ -212,7 +214,9 @@ export default function Page() {
                   className="flex items-center gap-x-2"
                   target="lf_gh"
                 >
-                  <GitHubIcon className="h-4 w-4" /> GitHub
+                  <GitHubIcon className="h-4 w-4" />
+                  GitHub
+                  <ExternalLinkIcon className="size-4 text-gray-500" />
                 </a>
                 <a
                   href="https://x.com/louisfacun"
@@ -221,6 +225,7 @@ export default function Page() {
                 >
                   <XTwitterIcon className="h-4 w-4" />
                   X/Twitter
+                  <ExternalLinkIcon className="size-4 text-gray-500" />
                 </a>
                 <a
                   href="https://linkedin.com/in/louisfacun"
@@ -229,12 +234,13 @@ export default function Page() {
                 >
                   <LinkedInIcon className="h-4 w-4" />
                   LinkedIn
+                  <ExternalLinkIcon className="size-4 text-gray-500" />
                 </a>
               </div>
             </Section>
 
             <Section id="contact" heading="My Contact">
-              Email: louisfacun@gmail.com
+              Email: louis@facun.dev
             </Section>
           </div>
         </div>
